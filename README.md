@@ -14,6 +14,10 @@ Images du projet:
 
 ![home](img/home.png)
 
+<img src="img/homeWatch.png"
+     alt="Home AppleWatch"
+     style="width: 80%" />
+
 ![home Watch](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/homeWatch.png "Home AppleWatch")
 
 ![actions](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/listActions.png "ListAction Iphone")
