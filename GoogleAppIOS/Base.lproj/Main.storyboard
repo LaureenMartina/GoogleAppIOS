@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e9E-Wy-iTL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Accueil-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Accueil" id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google_assistant" translatesAutoresizingMaskIntoConstraints="NO" id="5lk-wr-Au4">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-bJ-Iuf">
+                                <rect key="frame" x="136" y="314" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.80930213730569944" green="0.77988314490641475" blue="0.71830949054628424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vX0-bJ-Iuf" secondAttribute="height" multiplier="1:1" id="UD2-r3-ZSB"/>
+                                    <constraint firstAttribute="width" secondItem="vX0-bJ-Iuf" secondAttribute="height" multiplier="1:1" id="jr0-ji-Kuj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="TEST">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R3o-8s-TjJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interaction avec Google Assistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fht-Bx-WOX">
+                                <rect key="frame" x="79" y="87" width="255.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I6-QT-caq">
+                                <rect key="frame" x="136" y="378" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.98708711139896377" green="0.83648598678690012" blue="0.58181749226869861" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3I6-QT-caq" secondAttribute="height" multiplier="1:1" id="jTg-Uf-xWc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                <state key="normal" title="Actions List">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B9y-oT-59J" kind="show" id="kEc-OF-mo5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fht-Bx-WOX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-53" id="1ec-cg-Cln"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="vX0-bJ-Iuf" secondAttribute="trailing" constant="138" id="3gN-P6-e2r"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="3I6-QT-caq" secondAttribute="trailing" constant="138" id="84s-QJ-n5G"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="vX0-bJ-Iuf" secondAttribute="trailing" constant="138" id="D0M-hA-S8M"/>
+                            <constraint firstItem="vX0-bJ-Iuf" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="174" id="Eao-rr-vJi"/>
+                            <constraint firstItem="3I6-QT-caq" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="136" id="HZy-6z-Yqd"/>
+                            <constraint firstItem="vX0-bJ-Iuf" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="174" id="INU-6V-3Jh"/>
+                            <constraint firstItem="vX0-bJ-Iuf" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="136" id="KTh-qc-aZy"/>
+                            <constraint firstItem="vX0-bJ-Iuf" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="136" id="M6W-6u-2uW"/>
+                            <constraint firstItem="Fht-Bx-WOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="als-eE-cfC"/>
+                            <constraint firstAttribute="trailing" secondItem="Fht-Bx-WOX" secondAttribute="trailing" constant="79.5" id="mmM-P1-0gZ"/>
+                            <constraint firstItem="5lk-wr-Au4" firstAttribute="trailing" secondItem="Uee-0j-aNJ" secondAttribute="trailing" id="u8h-8f-rnt"/>
+                            <constraint firstItem="3I6-QT-caq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u8w-8P-p3h"/>
+                            <constraint firstItem="5lk-wr-Au4" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" id="uxH-zd-sL4"/>
+                            <constraint firstItem="5lk-wr-Au4" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" id="vMl-xK-sPj"/>
+                            <constraint firstAttribute="bottom" secondItem="5lk-wr-Au4" secondAttribute="bottom" id="w5P-Rc-1Vl"/>
+                            <constraint firstItem="3I6-QT-caq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wMi-Qp-8LA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Google Assistant" id="nhn-8h-XHf"/>
+                    <connections>
+                        <segue destination="B9y-oT-59J" kind="show" identifier="accueil" id="7Sj-Eb-wtX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707.24637681159425" y="146.65178571428569"/>
+        </scene>
+        <!--Actions-->
+        <scene sceneID="X4d-YO-mjH">
+            <objects>
+                <tableViewController title="Actions" id="B9y-oT-59J" customClass="ActionsTableViewController" customModule="GoogleAppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Tz-j6-hDe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableActions" textLabel="VNL-qY-yDE" style="IBUITableViewCellStyleDefault" id="e2s-BO-Lxa">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e2s-BO-Lxa" id="SIW-65-eoj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Action" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VNL-qY-yDE">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="B9y-oT-59J" id="AV0-ig-g5S"/>
+                            <outlet property="delegate" destination="B9y-oT-59J" id="Chq-gL-TIW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Actions List" leftItemsSupplementBackButton="YES" id="iJ1-Vi-TtJ"/>
+                    <connections>
+                        <outlet property="actionsTableView" destination="6Tz-j6-hDe" id="3ar-5Q-UJo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FMz-TT-xd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="147"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qSJ-zv-PP3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9E-Wy-iTL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="nNJ-6L-Qt0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.7074482705498234" green="0.87844734309916717" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="25"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Urn-jT-ETS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esE-RT-HAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1617.3913043478262" y="146.65178571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="google_assistant" width="1200" height="1200"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="7Sj-Eb-wtX"/>
+    </inferredMetricsTieBreakers>
+</document>

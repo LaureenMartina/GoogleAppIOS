@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BEF6B5F3B145FCEAC73CA2A /* Pods_GoogleAppIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D929D9808FD43AB207316D /* Pods_GoogleAppIOS.framework */; };
+		4F26D8681B67565EA349632E /* Pods_GoogleAppIOS_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B041B97591E787230CF8606 /* Pods_GoogleAppIOS_WatchKit_Extension.framework */; };
+		527770E7EB430954AE1FC5D5 /* Pods_GoogleAppIOS_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55131E7A5C7E2E86B8A97FE0 /* Pods_GoogleAppIOS_WatchKit_App.framework */; };
+		629CDE8F23DC99D8009F055E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629CDE8E23DC99D8009F055E /* CustomButton.swift */; };
+		629CDE9623DCA15E009F055E /* ActionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629CDE9423DCA15E009F055E /* ActionsTableViewController.swift */; };
+		629F0B7523D4C5E100B81B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F0B7423D4C5E100B81B50 /* AppDelegate.swift */; };
+		629F0B7723D4C5E100B81B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F0B7623D4C5E100B81B50 /* ViewController.swift */; };
+		629F0B7A23D4C5E100B81B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629F0B7823D4C5E100B81B50 /* Main.storyboard */; };
+		629F0B7C23D4C5E200B81B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629F0B7B23D4C5E200B81B50 /* Assets.xcassets */; };
+		629F0B7F23D4C5E200B81B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629F0B7D23D4C5E200B81B50 /* LaunchScreen.storyboard */; };
+		629F0B8423D4C5E200B81B50 /* GoogleAppIOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 629F0B8323D4C5E200B81B50 /* GoogleAppIOS WatchKit App.app */; };
+		629F0B8A23D4C5E200B81B50 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629F0B8823D4C5E200B81B50 /* Interface.storyboard */; };
+		629F0B8C23D4C5E200B81B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629F0B8B23D4C5E200B81B50 /* Assets.xcassets */; };
+		629F0B9323D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 629F0B9223D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		629F0B9823D4C5E300B81B50 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F0B9723D4C5E300B81B50 /* InterfaceController.swift */; };
+		629F0B9A23D4C5E300B81B50 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F0B9923D4C5E300B81B50 /* ExtensionDelegate.swift */; };
+		629F0B9E23D4C5E300B81B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629F0B9D23D4C5E300B81B50 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629F0B8523D4C5E200B81B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629F0B6923D4C5E100B81B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629F0B8223D4C5E200B81B50;
+			remoteInfo = "GoogleAppIOS WatchKit App";
+		};
+		629F0B9423D4C5E300B81B50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629F0B6923D4C5E100B81B50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629F0B9123D4C5E300B81B50;
+			remoteInfo = "GoogleAppIOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		629F0BA623D4C5E300B81B50 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				629F0B9323D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629F0BAA23D4C5E300B81B50 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				629F0B8423D4C5E200B81B50 /* GoogleAppIOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		21BBFDFDF965D8C798FB7434 /* Pods-GoogleAppIOS WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAppIOS WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-GoogleAppIOS WatchKit Extension/Pods-GoogleAppIOS WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4B041B97591E787230CF8606 /* Pods_GoogleAppIOS_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAppIOS_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C1210F650BA3EB3BC0ADD8 /* Pods-GoogleAppIOS WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAppIOS WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAppIOS WatchKit Extension/Pods-GoogleAppIOS WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		55131E7A5C7E2E86B8A97FE0 /* Pods_GoogleAppIOS_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAppIOS_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B93084062FDD82F7F3AA01 /* Pods-GoogleAppIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAppIOS.release.xcconfig"; path = "Target Support Files/Pods-GoogleAppIOS/Pods-GoogleAppIOS.release.xcconfig"; sourceTree = "<group>"; };
+		629CDE8E23DC99D8009F055E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		629CDE9423DCA15E009F055E /* ActionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsTableViewController.swift; sourceTree = "<group>"; };
+		629F0B7123D4C5E100B81B50 /* GoogleAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		629F0B7423D4C5E100B81B50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		629F0B7623D4C5E100B81B50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		629F0B7923D4C5E100B81B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629F0B7B23D4C5E200B81B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629F0B7E23D4C5E200B81B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		629F0B8023D4C5E200B81B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629F0B8323D4C5E200B81B50 /* GoogleAppIOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoogleAppIOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629F0B8923D4C5E200B81B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		629F0B8B23D4C5E200B81B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629F0B8D23D4C5E200B81B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629F0B9223D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GoogleAppIOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		629F0B9723D4C5E300B81B50 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		629F0B9923D4C5E300B81B50 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		629F0B9D23D4C5E300B81B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		629F0B9F23D4C5E300B81B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		629F0BA023D4C5E300B81B50 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		63B8199682D7403E7222237E /* Pods-GoogleAppIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAppIOS.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAppIOS/Pods-GoogleAppIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		99D929D9808FD43AB207316D /* Pods_GoogleAppIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleAppIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C413EB98D8DAE0621AE1F1C8 /* Pods-GoogleAppIOS WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAppIOS WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-GoogleAppIOS WatchKit App/Pods-GoogleAppIOS WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		CA3E27A68271452C6AF0CB40 /* Pods-GoogleAppIOS WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleAppIOS WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-GoogleAppIOS WatchKit App/Pods-GoogleAppIOS WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629F0B6E23D4C5E100B81B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BEF6B5F3B145FCEAC73CA2A /* Pods_GoogleAppIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629F0B8F23D4C5E300B81B50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F26D8681B67565EA349632E /* Pods_GoogleAppIOS_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B65DD63A1A70A403EA2FFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527770E7EB430954AE1FC5D5 /* Pods_GoogleAppIOS_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		629F0B6823D4C5E100B81B50 = {
+			isa = PBXGroup;
+			children = (
+				629F0B7323D4C5E100B81B50 /* GoogleAppIOS */,
+				629F0B8723D4C5E200B81B50 /* GoogleAppIOS WatchKit App */,
+				629F0B9623D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension */,
+				629F0B7223D4C5E100B81B50 /* Products */,
+				B1963742F340DF7923D39DC0 /* Pods */,
+				998CE63469D0E06323C5C3E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		629F0B7223D4C5E100B81B50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629F0B7123D4C5E100B81B50 /* GoogleAppIOS.app */,
+				629F0B8323D4C5E200B81B50 /* GoogleAppIOS WatchKit App.app */,
+				629F0B9223D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629F0B7323D4C5E100B81B50 /* GoogleAppIOS */ = {
+			isa = PBXGroup;
+			children = (
+				629F0B7423D4C5E100B81B50 /* AppDelegate.swift */,
+				629F0B7623D4C5E100B81B50 /* ViewController.swift */,
+				629F0B7823D4C5E100B81B50 /* Main.storyboard */,
+				629F0B7B23D4C5E200B81B50 /* Assets.xcassets */,
+				629F0B7D23D4C5E200B81B50 /* LaunchScreen.storyboard */,
+				629F0B8023D4C5E200B81B50 /* Info.plist */,
+				629CDE8E23DC99D8009F055E /* CustomButton.swift */,
+				629CDE9423DCA15E009F055E /* ActionsTableViewController.swift */,
+			);
+			path = GoogleAppIOS;
+			sourceTree = "<group>";
+		};
+		629F0B8723D4C5E200B81B50 /* GoogleAppIOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				629F0B8823D4C5E200B81B50 /* Interface.storyboard */,
+				629F0B8B23D4C5E200B81B50 /* Assets.xcassets */,
+				629F0B8D23D4C5E200B81B50 /* Info.plist */,
+			);
+			path = "GoogleAppIOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		629F0B9623D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				629F0B9723D4C5E300B81B50 /* InterfaceController.swift */,
+				629F0B9923D4C5E300B81B50 /* ExtensionDelegate.swift */,
+				629F0B9D23D4C5E300B81B50 /* Assets.xcassets */,
+				629F0B9F23D4C5E300B81B50 /* Info.plist */,
+				629F0BA023D4C5E300B81B50 /* PushNotificationPayload.apns */,
+			);
+			path = "GoogleAppIOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		998CE63469D0E06323C5C3E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99D929D9808FD43AB207316D /* Pods_GoogleAppIOS.framework */,
+				55131E7A5C7E2E86B8A97FE0 /* Pods_GoogleAppIOS_WatchKit_App.framework */,
+				4B041B97591E787230CF8606 /* Pods_GoogleAppIOS_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1963742F340DF7923D39DC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B8199682D7403E7222237E /* Pods-GoogleAppIOS.debug.xcconfig */,
+				56B93084062FDD82F7F3AA01 /* Pods-GoogleAppIOS.release.xcconfig */,
+				C413EB98D8DAE0621AE1F1C8 /* Pods-GoogleAppIOS WatchKit App.debug.xcconfig */,
+				CA3E27A68271452C6AF0CB40 /* Pods-GoogleAppIOS WatchKit App.release.xcconfig */,
+				50C1210F650BA3EB3BC0ADD8 /* Pods-GoogleAppIOS WatchKit Extension.debug.xcconfig */,
+				21BBFDFDF965D8C798FB7434 /* Pods-GoogleAppIOS WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629F0B7023D4C5E100B81B50 /* GoogleAppIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629F0BAB23D4C5E300B81B50 /* Build configuration list for PBXNativeTarget "GoogleAppIOS" */;
+			buildPhases = (
+				5FD5711CE33C6A4858C22D3A /* [CP] Check Pods Manifest.lock */,
+				629F0B6D23D4C5E100B81B50 /* Sources */,
+				629F0B6E23D4C5E100B81B50 /* Frameworks */,
+				629F0B6F23D4C5E100B81B50 /* Resources */,
+				629F0BAA23D4C5E300B81B50 /* Embed Watch Content */,
+				AD036FD80398357A59818994 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629F0B8623D4C5E200B81B50 /* PBXTargetDependency */,
+			);
+			name = GoogleAppIOS;
+			productName = GoogleAppIOS;
+			productReference = 629F0B7123D4C5E100B81B50 /* GoogleAppIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629F0B8223D4C5E200B81B50 /* GoogleAppIOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629F0BA723D4C5E300B81B50 /* Build configuration list for PBXNativeTarget "GoogleAppIOS WatchKit App" */;
+			buildPhases = (
+				AAF6934C9AC71A3BB973F680 /* [CP] Check Pods Manifest.lock */,
+				629F0B8123D4C5E200B81B50 /* Resources */,
+				629F0BA623D4C5E300B81B50 /* Embed App Extensions */,
+				9B65DD63A1A70A403EA2FFA0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629F0B9523D4C5E300B81B50 /* PBXTargetDependency */,
+			);
+			name = "GoogleAppIOS WatchKit App";
+			productName = "GoogleAppIOS WatchKit App";
+			productReference = 629F0B8323D4C5E200B81B50 /* GoogleAppIOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		629F0B9123D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629F0BA323D4C5E300B81B50 /* Build configuration list for PBXNativeTarget "GoogleAppIOS WatchKit Extension" */;
+			buildPhases = (
+				DDAAF3E5642298E93A6E63E9 /* [CP] Check Pods Manifest.lock */,
+				629F0B8E23D4C5E300B81B50 /* Sources */,
+				629F0B8F23D4C5E300B81B50 /* Frameworks */,
+				629F0B9023D4C5E300B81B50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoogleAppIOS WatchKit Extension";
+			productName = "GoogleAppIOS WatchKit Extension";
+			productReference = 629F0B9223D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629F0B6923D4C5E100B81B50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "laureen martina";
+				TargetAttributes = {
+					629F0B7023D4C5E100B81B50 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					629F0B8223D4C5E200B81B50 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					629F0B9123D4C5E300B81B50 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 629F0B6C23D4C5E100B81B50 /* Build configuration list for PBXProject "GoogleAppIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629F0B6823D4C5E100B81B50;
+			productRefGroup = 629F0B7223D4C5E100B81B50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629F0B7023D4C5E100B81B50 /* GoogleAppIOS */,
+				629F0B8223D4C5E200B81B50 /* GoogleAppIOS WatchKit App */,
+				629F0B9123D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629F0B6F23D4C5E100B81B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629F0B7F23D4C5E200B81B50 /* LaunchScreen.storyboard in Resources */,
+				629F0B7C23D4C5E200B81B50 /* Assets.xcassets in Resources */,
+				629F0B7A23D4C5E100B81B50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629F0B8123D4C5E200B81B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629F0B8C23D4C5E200B81B50 /* Assets.xcassets in Resources */,
+				629F0B8A23D4C5E200B81B50 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629F0B9023D4C5E300B81B50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629F0B9E23D4C5E300B81B50 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FD5711CE33C6A4858C22D3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAppIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF6934C9AC71A3BB973F680 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAppIOS WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD036FD80398357A59818994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAppIOS/Pods-GoogleAppIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleAppIOS/Pods-GoogleAppIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleAppIOS/Pods-GoogleAppIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDAAF3E5642298E93A6E63E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleAppIOS WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629F0B6D23D4C5E100B81B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629F0B7723D4C5E100B81B50 /* ViewController.swift in Sources */,
+				629F0B7523D4C5E100B81B50 /* AppDelegate.swift in Sources */,
+				629CDE9623DCA15E009F055E /* ActionsTableViewController.swift in Sources */,
+				629CDE8F23DC99D8009F055E /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629F0B8E23D4C5E300B81B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629F0B9A23D4C5E300B81B50 /* ExtensionDelegate.swift in Sources */,
+				629F0B9823D4C5E300B81B50 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629F0B8623D4C5E200B81B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629F0B8223D4C5E200B81B50 /* GoogleAppIOS WatchKit App */;
+			targetProxy = 629F0B8523D4C5E200B81B50 /* PBXContainerItemProxy */;
+		};
+		629F0B9523D4C5E300B81B50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629F0B9123D4C5E300B81B50 /* GoogleAppIOS WatchKit Extension */;
+			targetProxy = 629F0B9423D4C5E300B81B50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		629F0B7823D4C5E100B81B50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629F0B7923D4C5E100B81B50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629F0B7D23D4C5E200B81B50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629F0B7E23D4C5E200B81B50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		629F0B8823D4C5E200B81B50 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629F0B8923D4C5E200B81B50 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		629F0BA123D4C5E300B81B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		629F0BA223D4C5E300B81B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		629F0BA423D4C5E300B81B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C1210F650BA3EB3BC0ADD8 /* Pods-GoogleAppIOS WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GoogleAppIOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.GoogleAppIOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		629F0BA523D4C5E300B81B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BBFDFDF965D8C798FB7434 /* Pods-GoogleAppIOS WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GoogleAppIOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.GoogleAppIOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		629F0BA823D4C5E300B81B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C413EB98D8DAE0621AE1F1C8 /* Pods-GoogleAppIOS WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = GoogleAppIOS_WatchKit_Extension;
+				INFOPLIST_FILE = "GoogleAppIOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.GoogleAppIOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		629F0BA923D4C5E300B81B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA3E27A68271452C6AF0CB40 /* Pods-GoogleAppIOS WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = GoogleAppIOS_WatchKit_Extension;
+				INFOPLIST_FILE = "GoogleAppIOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.GoogleAppIOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		629F0BAC23D4C5E300B81B50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B8199682D7403E7222237E /* Pods-GoogleAppIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoogleAppIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.GoogleAppIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		629F0BAD23D4C5E300B81B50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B93084062FDD82F7F3AA01 /* Pods-GoogleAppIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoogleAppIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.GoogleAppIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629F0B6C23D4C5E100B81B50 /* Build configuration list for PBXProject "GoogleAppIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629F0BA123D4C5E300B81B50 /* Debug */,
+				629F0BA223D4C5E300B81B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629F0BA323D4C5E300B81B50 /* Build configuration list for PBXNativeTarget "GoogleAppIOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629F0BA423D4C5E300B81B50 /* Debug */,
+				629F0BA523D4C5E300B81B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629F0BA723D4C5E300B81B50 /* Build configuration list for PBXNativeTarget "GoogleAppIOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629F0BA823D4C5E300B81B50 /* Debug */,
+				629F0BA923D4C5E300B81B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629F0BAB23D4C5E300B81B50 /* Build configuration list for PBXNativeTarget "GoogleAppIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629F0BAC23D4C5E300B81B50 /* Debug */,
+				629F0BAD23D4C5E300B81B50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629F0B6923D4C5E100B81B50 /* Project object */;
+}

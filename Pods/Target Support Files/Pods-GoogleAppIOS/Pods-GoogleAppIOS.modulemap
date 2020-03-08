@@ -1,0 +1,6 @@
+framework module Pods_GoogleAppIOS {
+  umbrella header "Pods-GoogleAppIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
