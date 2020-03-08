@@ -12,10 +12,10 @@ Lancer : Iphone + AppleWatch pour compiler le projet
 
 Images du projet:
 
-[logo]: https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/home.png "Home Iphone"
+![home](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/home.png "Home Iphone")
 
-[logo]: https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/homeWatch.png "Home AppleWatch"
+![home Watch](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/homeWatch.png "Home AppleWatch")
 
-[logo]: https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/listActions.png "ListAction Iphone"
+![actions](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/listActions.png "ListAction Iphone")
 
-[logo]: https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/responseGoogleWatch.png "Response Apple Watch"
+![response](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/responseGoogleWatch.png "Response Apple Watch")
