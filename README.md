@@ -14,8 +14,8 @@ Images du projet:
 
 <img src="img/home.png" alt="Home iphone" width="200" align="left" />
 
-<img src="img/homeWatch.png" alt="Home AppleWatch" width="150" align="right" />
+<img src="img/homeWatch.png" alt="Home AppleWatch" width="200" align="right" />
 
-<img src="img/ListActions.png" alt="ListAction Iphone" width="150" align="left" />
+<img src="img/ListActions.png" alt="ListAction Iphone" width="200" align="left" />
 
 <img src="img/responseGoogleWatch.png" alt="Response Apple Watch" width="200" align="right" />
