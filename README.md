@@ -12,11 +12,13 @@ Lancer : Iphone + AppleWatch pour compiler le projet
 
 Images du projet:
 
-![home](img/home.png)
+<img src="img/home.png"
+     alt="Home iphone"
+     style="width: 50%" />
 
 <img src="img/homeWatch.png"
      alt="Home AppleWatch"
-     style="width: 80%" />
+     style="width: 50%" />
 
 ![home Watch](https://github.com/LaureenMartina/GoogleAppIOS/tree/master/img/homeWatch.png "Home AppleWatch")
 
